@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title ChatCat - Rooms
+    link(rel='stylesheet', href='./css/roomsStyles.css')
+    script(src='/js/jquery-2.1.4.min.js')
+  body
+    .container
+      .titlePanel
+        h1 ChatCAT | Select or Create a Chatroom
+      .controls
+        .userPicHolder
+          img(src='./img/user.jpg', alt='John Doe')
+        p.userName John Doe
+        a#logOutBtn(href='login.htm') Logout
+      .controls
+        input(type='text', name='roomName', placeholder='Create a new Chatroom')
+        a#createBtn(href='#') Create
+      .roomsListDiv
+        ul#roomsListUL.roomsList
+          // Loop list items here
+          a(href='chatroom.htm')
+            li World Cuisine
+          a(href='chatroom.htm')
+            li Coffee and Conversations
+          // Loop ends

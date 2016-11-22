@@ -1,0 +1,37 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title ChatCat - Topic Goes Here
+    link(rel='stylesheet', href='./css/chatroomStyles.css')
+    script(src='/js/jquery-2.1.4.min.js')
+  body
+    .container
+      .titlePanel
+        h1 ChatCAT | Topic Goes Here
+      .controls
+        .userPicHolder
+          img(src='./img/user.jpg', alt='John Doe')
+        p.userName John Doe
+        a#roomsBtn(href='rooms.htm') Rooms
+        a#logOutBtn(href='login.htm') Logout
+      .chatListDiv
+        .chatMessagesPanel
+          .chatMessages
+            // Loop this for chat messages
+            .chatBlock
+              .userPic
+                img(src='./img/user.jpg')
+              .chatMsg
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti perferendis eius aut nesciunt necessitatibus ad nulla, qui sequi, id nam. Possimus odit aut nisi veritatis amet distinctio id officiis ipsam!
+            // loop end
+          .typePanel
+            input(type='text', name='userInput', placeholder='Type here and press enter')
+            a#uploadFile.fileUploadBtn(href='#') Photo
+        .chatUsers
+          // Loop this for chat users
+          .userBlock
+            .userPic
+              img(src='./img/user.jpg', alt='John Doe')
+            .cuserName John Doe
+          // loop end
