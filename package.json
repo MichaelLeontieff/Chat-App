@@ -1,0 +1,29 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "Realtime Chatroom application built upon NodeJS, Express, Mongo and Socket.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelLeontieff/Chat-App.git"
+  },
+  "author": "Michael Leontieff <michael@leontieff.net>",
+  "license": "ISC",
+  "engines": {
+    "node": "7.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/MichaelLeontieff/Chat-App/issues"
+  },
+  "homepage": "https://github.com/MichaelLeontieff/Chat-App#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jade": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jade": "^1.11.0"
+  }
+}
