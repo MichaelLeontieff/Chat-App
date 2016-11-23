@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./server.ts"
   },
   "repository": {
     "type": "git",
@@ -21,10 +22,13 @@
   },
   "homepage": "https://github.com/MichaelLeontieff/Chat-App#readme",
   "devDependencies": {
+    "@types/node": "^6.0.50",
     "grunt": "^1.0.1",
     "grunt-contrib-jade": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "ts-node": "^1.7.0",
+    "typescript": "^2.0.10"
   },
   "dependencies": {
     "express": "^4.14.0"
