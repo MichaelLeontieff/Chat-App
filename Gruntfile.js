@@ -8,7 +8,6 @@
 
 // npm install --save-dev grunt-contrib-watch
 
-
 module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
@@ -39,10 +38,7 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  // Default task.
+
   grunt.registerTask('build', 'Convert Jade templates into html templates', ['jade']);
-
   grunt.registerTask('default','Convert Jade templates into html templates', ['jade','watch']);
-
-
 };
