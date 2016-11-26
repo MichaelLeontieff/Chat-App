@@ -3,3 +3,6 @@ app/helpers/index.js
 app/index.js
 app/routes/index.js
 server.js
+app/config/index.js
+app/db/index.js
+app/session/index.js

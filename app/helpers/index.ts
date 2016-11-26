@@ -1,14 +1,11 @@
 const router = require("express").Router();
 
 // iterate through the routes object and mount the routes
-let _registerRoutes = (routes, method) => {
+let _registerRoutes = (routes, method: string) => {
   for (let key in routes) {
     if (typeof routes[key] === "object" &&
           routes[key] !== null) {
-
-          if (!(routes[key] instanceof Array)) {
             _registerRoutes(routes[key], key);
-          }
     } else {
       // Register the routes
       if (method === "get") {
@@ -24,7 +21,7 @@ let _registerRoutes = (routes, method) => {
 };
 
 let route = (routes) => {
-  _registerRoutes(routes);
+  _registerRoutes(routes, null);
   return router;
 };
 
